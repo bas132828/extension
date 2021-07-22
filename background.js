@@ -4,8 +4,14 @@ chrome.runtime.onInstalled.addListener(() => {
   console.log(`color changed on ${color}`);
 });
 chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
-  //   console.log(tabId, changeInfo, tab);
   if (changeInfo.status === "complete" && /^http/.test(tab.url)) {
+    chrome.scripting.insertCSS({
+      target: {
+        tabId,
+      },
+      files: ["./foreground-styles.css"],
+    });
+
     chrome.scripting
       .executeScript({
         target: {

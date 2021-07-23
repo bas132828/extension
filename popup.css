@@ -1,0 +1,11 @@
+.popup_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_container {
+  width: 500px;
+  height: 500px;
+  background-color: palegoldenrod;
+}

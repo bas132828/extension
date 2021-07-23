@@ -18,3 +18,8 @@
   background-color: orchid;
   z-index: inherit;
 }
+.change-text--button {
+  width: 100px;
+  height: 50px;
+  background-color: #fff;
+}

@@ -13,6 +13,13 @@
       "description": "my ext"
     }
   },
+  "content_scripts": [
+    {
+      "matches": ["https://www.booking.com/index*"],
+      "css": ["myStyles.css"],
+      "js": ["contentScript.js"]
+    }
+  ],
   "action": {
     "default_popup": "./popup.html",
     "default_icon": {

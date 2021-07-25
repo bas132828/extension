@@ -14,7 +14,6 @@ chrome.storage.sync.get(["arrayToSend"], function (result) {
             <img class='popup_container--hotel-image' src='${el.img}' alt='hotel-img'>
               <h3 class='ce_container--item__title'>${el.title}</h3>
             <span class='popup_container--price'>${el.price}</span>
-            
           </li>
       </ul>
       `;

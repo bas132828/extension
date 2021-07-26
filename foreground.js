@@ -1,7 +1,7 @@
 if (
-  document.querySelectorAll(
+  document.querySelector(
     "#hotellist_inner > div.sr_item.sr_item_new.sr_item_default.sr_property_block"
-  ).length
+  )
 ) {
   const nodesOnViewPort = Array.from(
     document.querySelectorAll(
